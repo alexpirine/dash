@@ -37,7 +37,7 @@ Instructions: Homebrew
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. As such, building with Qt5 is recommended. Qt5 5.7 requires C++11 which Dash Core doesn't fully support yet, Qt5 5.6.2 has some other issues, so make sure to install Qt version < 5.6.2 (5.6.1-1 is recommended).
     brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/e6d954bab88e89c5582498157077756900865070/Formula/qt5.rb
 
-### Building Dash Core
+### Building EasyMoney Core
 
 1. Clone the GitHub tree to get the source code and go into the directory.
 

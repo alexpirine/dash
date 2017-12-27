@@ -1,5 +1,6 @@
 // Copyright (c) 2011-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2017 The EasyMoney developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -273,7 +274,7 @@ RPCConsole::RPCConsole(const PlatformStyle *platformStyle, QWidget *parent) :
 
     connect(ui->clearButton, SIGNAL(clicked()), this, SLOT(clear()));
     connect(ui->btnClearTrafficGraph, SIGNAL(clicked()), ui->trafficGraph, SLOT(clear()));
-    
+
     // Wallet Repair Buttons
     // connect(ui->btn_salvagewallet, SIGNAL(clicked()), this, SLOT(walletSalvage()));
     // Disable salvage option in GUI, it's way too powerful and can lead to funds loss
@@ -541,7 +542,7 @@ void RPCConsole::buildParameterlist(QString arg)
     args.removeAll(ZAPTXES2);
     args.removeAll(UPGRADEWALLET);
     args.removeAll(REINDEX);
-   
+
     // Append repair parameter to command line.
     args.append(arg);
 
@@ -561,7 +562,7 @@ void RPCConsole::clear()
     // (when using width/height on an img, Qt uses nearest instead of linear interpolation)
     QString iconPath = ":/icons/" + GUIUtil::getThemeName() + "/";
     QString iconName = "";
-    
+
     for(int i=0; ICON_MAPPING[i].url; ++i)
     {
         iconName = ICON_MAPPING[i].source;

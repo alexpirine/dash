@@ -1,4 +1,5 @@
 // Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2017 The EasyMoney developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -336,7 +337,7 @@ bool CGovernanceManager::AddGovernanceObject(CGovernanceObject& govobj, bool& fA
         return false;
     }
 
-    LogPrint("gobject", "CGovernanceManager::AddGovernanceObject -- Adding object: hash = %s, type = %d\n", nHash.ToString(), govobj.GetObjectType()); 
+    LogPrint("gobject", "CGovernanceManager::AddGovernanceObject -- Adding object: hash = %s, type = %d\n", nHash.ToString(), govobj.GetObjectType());
 
     if(govobj.nObjectType == GOVERNANCE_OBJECT_WATCHDOG) {
         // If it's a watchdog, make sure it fits required time bounds
@@ -884,7 +885,7 @@ bool CGovernanceManager::MasternodeRateCheck(const CGovernanceObject& govobj, up
                  strHash, vin.prevout.ToStringShort(), nTimestamp, nNow);
         return false;
     }
-    
+
     double dMaxRate = 1.1 / nSuperblockCycleSeconds;
     double dRate = 0.0;
     CRateCheckBuffer buffer;
@@ -1247,7 +1248,7 @@ void CGovernanceManager::AddCachedTriggers()
 
     for(object_m_it it = mapObjects.begin(); it != mapObjects.end(); ++it) {
         CGovernanceObject& govobj = it->second;
-        
+
         if(govobj.nObjectType != GOVERNANCE_OBJECT_TRIGGER) {
             continue;
         }

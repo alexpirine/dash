@@ -1,6 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin Core developers
 // Copyright (c) 2014-2017 The Dash Core developers
+// Copyright (c) 2017 The EasyMoney developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -91,7 +92,7 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "signrawtransaction", 1 },
     { "signrawtransaction", 2 },
     { "sendrawtransaction", 1 },
-    { "sendrawtransaction", 2 },    
+    { "sendrawtransaction", 2 },
     { "fundrawtransaction", 1 },
     { "gettxout", 1 },
     { "gettxout", 2 },

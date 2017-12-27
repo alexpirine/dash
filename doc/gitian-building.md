@@ -26,7 +26,7 @@ Table of Contents
 - [Installing Gitian](#installing-gitian)
 - [Setting up the Gitian image](#setting-up-the-gitian-image)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Dash Core](#building-dash-core)
+- [Building EasyMoney Core](#building-dash-core)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -147,7 +147,7 @@ To select a different button, press `Tab`.
 ![](gitian-building/debian_install_9_user_password.png)
 
 - The installer will set up the clock using a time server; this process should be automatic
-- Set up the clock: choose a time zone (depends on the locale settings that you picked earlier; specifics don't matter)  
+- Set up the clock: choose a time zone (depends on the locale settings that you picked earlier; specifics don't matter)
 
 ![](gitian-building/debian_install_10_configure_clock.png)
 
@@ -344,7 +344,7 @@ manual intervention. Also optionally follow the next step: 'Seed the Gitian sour
 and offline git repositories' which will fetch the remaining files required for building
 offline.
 
-Building Dash Core
+Building EasyMoney Core
 ----------------
 
 To build Dash Core (for Linux, OS X and Windows) just follow the steps under 'perform

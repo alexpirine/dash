@@ -2,7 +2,7 @@ OpenBSD build guide
 ======================
 (updated for OpenBSD 5.7)
 
-This guide describes how to build dashd and command-line utilities on OpenBSD.
+This guide describes how to build easymoneyd and command-line utilities on OpenBSD.
 
 As OpenBSD is most common as a server OS, we will not bother with the GUI.
 
@@ -96,7 +96,7 @@ cd db-4.8.30.NC/build_unix/
 make install
 ```
 
-### Building Dash Core
+### Building EasyMoney Core
 
 **Important**: use `gmake`, not `make`. The non-GNU `make` will exit with a horrible error.
 
